@@ -1,0 +1,19 @@
+# Archivos y carpetas de Visual Studio
+.vs/
+*.user
+*.suo
+*.vscode/
+
+# Archivos temporales de compilación
+bin/
+obj/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

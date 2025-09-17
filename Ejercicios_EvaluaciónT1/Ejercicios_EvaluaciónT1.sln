@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicios_EvaluaciónT1_C#", "Ejercicios_EvaluaciónT1_C#.csproj", "{ADB86751-63A1-410B-8849-6E805F180106}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Ejercicios_Evaluación_Python.py", "..\Ejercicios_Evaluación_Python.py\Ejercicios_Evaluación_Python.py.pyproj", "{60E14CCD-0E18-4066-80EC-91D6714BE78A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADB86751-63A1-410B-8849-6E805F180106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB86751-63A1-410B-8849-6E805F180106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB86751-63A1-410B-8849-6E805F180106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB86751-63A1-410B-8849-6E805F180106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E14CCD-0E18-4066-80EC-91D6714BE78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E14CCD-0E18-4066-80EC-91D6714BE78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7ABC987-6DBB-4E7E-A8F9-1228AF40A596}
+	EndGlobalSection
+EndGlobal
