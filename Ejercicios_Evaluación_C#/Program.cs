@@ -20,8 +20,8 @@ namespace Ejercicios_EvaluaciónT1
             //Inicio
             //Declaramos variables
             double Precio_Final= 0, precio_producto, Descuento = 0;
-            int codigo;
-            bool codigoValido = true;
+            int code; 
+            
 
             //Desarrollo, Ingreso de datos y asignación de variables
             Console.WriteLine("Buen día. Ingrese el precio del producto elegido: ");
@@ -33,10 +33,10 @@ namespace Ejercicios_EvaluaciónT1
             Console.WriteLine("[2] - Empleado");
             Console.WriteLine("[3] - Cliente frecuente");
             Console.WriteLine("===================");
-            codigo = int.Parse(Console.ReadLine());
+            code = int.Parse(Console.ReadLine());
 
             //Selección del descuento
-            switch (codigo)
+            switch (code)
             {
                 case 1: //no se pone '' porque es un número
                     Descuento = precio_producto * 0.10;
@@ -52,22 +52,25 @@ namespace Ejercicios_EvaluaciónT1
 
                 default:
                     Console.WriteLine("El código ingresado es inválido, no se aplicara descuento. ");
-                    codigoValido = false;
+                    
                     break;
             }
 
-            //Si el código ingresado es válido, calculamos el precio final
-
-            if (codigoValido) 
+            //Validación del código
+            if (code >= 1 && code <= 3)
             {
                 Precio_Final = precio_producto - Descuento;
+                
+                //Utilizo operador lógico si aplica el descuento adicional
+                if (precio_producto > 500)
+                {
+                    Precio_Final = Precio_Final - (Precio_Final * 0.05);
+                }
             }
-            
-            //Utilizo operador lógico si aplica el descuento adicional
 
-            if (precio_producto > 500 && codigoValido)
+            else 
             {
-                Precio_Final = Precio_Final - (Precio_Final * 0.05);
+                Precio_Final = precio_producto;
             }
 
             //Final
@@ -79,7 +82,7 @@ namespace Ejercicios_EvaluaciónT1
             //Inicio
             //Declaramos variables
             int nota;
-            double raizCuadrada, potenciaCubo;
+            double Cuadrada, potenciaCubo;
 
             //Desarrollo. Ingreso de datos y asignación de variables
             Console.WriteLine("Buen día. Ingrese su nota de (0 - 20): ");
@@ -129,11 +132,11 @@ namespace Ejercicios_EvaluaciónT1
                 }
 
                 //Calculamos la raíz cuadrada y la potencia de la nota al cubo
-                raizCuadrada = Math.Sqrt(nota);
+                Cuadrada = Math.Sqrt(nota);
                 potenciaCubo = Math.Pow(nota,3);
 
                 //Final
-                Console.WriteLine("La raíz cuadrada es: {0:F1}", raizCuadrada); //El {0:F1} es utilizado para poner un decimal (F1) y la cantidad (0)
+                Console.WriteLine("La raíz cuadrada es: {0:F1}", Cuadrada); //El {0:F1} es utilizado para poner un decimal (F1) y la cantidad (0)
                 Console.WriteLine("La potencia al cubo es: {0}", potenciaCubo);
             }
         }
