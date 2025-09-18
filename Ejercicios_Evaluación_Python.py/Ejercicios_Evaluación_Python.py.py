@@ -8,9 +8,34 @@ def Ejercicio1():
     print("[2] - Empleado")
     print("[3] - Cliente frecuente")
     print("=================")
-    codigo = int(input())
+    codigo = int(input("Ingrese el código: "))
 
+    #Selección del descuento
+    if codigo == 1:
+        descuento = precio_producto * 0.10
 
+    elif codigo == 2:
+        descuento = precio_producto * 0.15
+
+    elif codigo == 3:
+        descuento = precio_producto * 0.20
+
+    else: 
+        print("El código ingresado es inválido, no se aplicará descuento.")
+
+    #Validación del código
+    if codigo >=1 and codigo <= 3:
+        precio_final = precio_producto - descuento
+
+        #Utilizo operador lógico
+        if precio_producto > 500:
+            precio_final = precio_final - (precio_final * 0.05)
+
+    else:
+        precio_final = precio_producto
+
+    #Final
+    print(f"El precio final del producto es: S/. {precio_final:.2f}")
 
 def Ejercicio2():
     #Inicio
